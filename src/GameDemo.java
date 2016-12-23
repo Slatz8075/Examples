@@ -95,14 +95,14 @@ public class GameDemo extends JComponent implements KeyListener{
                 angle = (angle - 3)%360;
             }
             if(moveForward){
-               double dy = (-2*Math.cos(Math.toRadians(angle)))/1.3;
-               double dx = (2*Math.sin(Math.toRadians(angle)))/1.3;
+               double dy = (-2*Math.cos(Math.toRadians(angle)))/2;
+               double dx = (2*Math.sin(Math.toRadians(angle)))/2;
                y = y + dy;
                x = x + dx;
             }
             if(moveBack){
-               double dy = (-2*Math.cos(Math.toRadians(angle)))/1.3;
-               double dx = (2*Math.sin(Math.toRadians(angle)))/1.3;
+               double dy = (-2*Math.cos(Math.toRadians(angle)))/2;
+               double dx = (2*Math.sin(Math.toRadians(angle)))/2;
                y = y - dy;
                x = x - dx;
             }
@@ -173,10 +173,10 @@ public class GameDemo extends JComponent implements KeyListener{
         if(key == KeyEvent.VK_S){
             moveBack = true;
         }
-        if(key == KeyEvent.VK_D){
+        if(key == KeyEvent.VK_E){
             rotateR = true;
         }
-        if(key == KeyEvent.VK_A){
+        if(key == KeyEvent.VK_Q){
             rotateL = true;
         }
     }
@@ -190,10 +190,10 @@ public class GameDemo extends JComponent implements KeyListener{
         if(key == KeyEvent.VK_S){
             moveBack = false;
         }
-        if(key == KeyEvent.VK_D){
+        if(key == KeyEvent.VK_E){
             rotateR = false;
         }
-        if(key == KeyEvent.VK_A){
+        if(key == KeyEvent.VK_Q){
             rotateL = false;
         }
     }
